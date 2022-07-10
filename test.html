@@ -1,0 +1,53 @@
+<h2 class="section-title section-title-mode-dark">Онлайн-запись</h2>
+						<form name="contact-form" autocomplete="on" novalidate>
+							<div class="contact-form-wrapper">
+								<label class="contact-form-group">
+									<input
+										class="contact-form-field"
+										type="text"
+										name="user-name"
+										placeholder="Antony Black"
+										minlength="3"
+										required
+									/>
+									<span class="contact-form-label">Имя*</span>
+									<span class="contact-form-error">Минимальния длинна 3 символа</span>
+									<svg class="contact-form-error-icon" width="15" height="15">
+										<use class="icon-attention" href="./images/icons.svg#icon-attention"></use>
+										<use class="icon-success" href="./images/icons.svg#icon-success"></use>
+									</svg>
+								</label>
+								<label class="contact-form-group">
+									<input
+										class="contact-form-field"
+										type="phone"
+										name="user-phone"
+										placeholder="+38 (099) 123-45-67"
+										required
+										id="user-phone"
+									/>
+									<span class="contact-form-label">Телефон*</span>
+									<span class="contact-form-error">Введите телефон в указанном формате</span>
+									<svg class="contact-form-error-icon" width="15" height="15">
+										<use class="icon-attention" href="./images/icons.svg#icon-attention"></use>
+										<use class="icon-success" href="./images/icons.svg#icon-success"></use>
+									</svg>
+								</label>
+							</div>
+							<label class="contact-form-message-group">
+								<textarea
+									class="contact-form-message"
+									name="user-message"
+									rows="5"
+									placeholder="Enter your message"
+									minlength="3"
+								></textarea>
+								<span class="contact-form-label">Cообщение</span>
+								<span class="contact-form-error">Коментарий должен содержать от 3 до 1000 символов</span>
+								<svg class="contact-form-error-icon" width="20" height="20">
+									<use class="icon-attention" href="./images/icons.svg#icon-attention"></use>
+									<use class="icon-success" href="./images/icons.svg#icon-success"></use>
+								</svg>
+							</label>
+							<button class="btn btn-mode-dark" type="submit">отправить</button>
+						</form>
